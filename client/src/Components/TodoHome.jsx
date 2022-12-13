@@ -29,7 +29,7 @@ const TodoHome = () => {
             <h1> {user.name} - {user.email} </h1>
                 <div className="flex items-start flex-wrap -m-12">
                     <div className="p-12 md:w-1/2 flex flex-col items-start mt-4">
-                        <InputTodo />
+                        <InputTodo todos={user?.tasks} />
                     </div>
                     <div className="p-12 md:w-1/2 flex flex-col items-start">
                         <TodoList todos={user?.tasks} userid={user._id} />
